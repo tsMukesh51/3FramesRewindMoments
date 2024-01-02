@@ -11,6 +11,7 @@ section:first-child {
 
 main-header {
   position: fixed;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -95,7 +96,7 @@ main-header .hamburger-menu.open + .menu {
 }
 main-header a:hover,
 main-header a:focus {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 main {
   padding-top: calc(var(--header-height) * 0.75 + 15px);
@@ -139,6 +140,21 @@ slider-component {
   font-family: "Merienda";
   line-height: 150%;
 }
+/* Footer */
+main-footer {
+  display: block;
+  background-color: var(--tertiary-dark-color);
+}
+main-footer * {
+  color: #fff;
+}
+main-footer > div {
+  padding: 25px 0;
+}
+main-footer .pages > div {
+  padding: 10px 0;
+}
+
 @media (min-width: 768px) {
   section {
     padding: var(--section-spacing) 0;

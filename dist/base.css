@@ -31,6 +31,10 @@ video {
   color: #000;
 }
 
+.no-break {
+  white-space: nowrap;
+}
+
 a:empty,
 ul:empty,
 dl:empty,
@@ -183,6 +187,10 @@ p,
   font-family: var(--font-para-family);
   font-weight: var(--font-para-weight);
   font-size: calc(var(--font-para-scale) * 1.4rem);
+}
+
+small {
+  font-size: 75%;
 }
 
 a {
@@ -479,4 +487,8 @@ ul {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
