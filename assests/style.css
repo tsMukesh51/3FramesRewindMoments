@@ -61,9 +61,6 @@ main-header .hamburger-menu {
   --bar-height: 9px;
   --hamburger-gap: 8px;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  --foreground-color: var(--primary-color);
-  --background-color: var(--primary-color);
   position: fixed;
   top: calc(var(--header-height) * 0.375);
   right: 15px;
@@ -79,7 +76,7 @@ main-header .hamburger-menu span {
   transform-origin: right center;
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--background-color);
+  background-color: var(--primary-light-color);
   border-radius: 3px;
 }
 main-header .hamburger-menu.open span:nth-child(1) {
@@ -148,13 +145,34 @@ main-footer {
 main-footer * {
   color: #fff;
 }
+main-footer .footer-wrapper > div {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
 main-footer > div {
   padding: 25px 0;
 }
 main-footer .pages > div {
-  padding: 10px 0;
+  padding: 0 0 10px;
 }
-
+main-footer .social-links li {
+  /* width: min-content; */
+}
+main-footer .social-links li svg {
+  height: 45px;
+  width: 65px;
+  padding: 0 10px;
+}
+main-footer .company > * {
+  padding: 0 0 5px;
+}
+main-footer .company > p {
+  padding-left: 20px;
+}
+main-footer .pages > div:last-child,
+main-footer .company > *:last-child {
+  padding-bottom: 0;
+}
 @media (min-width: 768px) {
   section {
     padding: var(--section-spacing) 0;
