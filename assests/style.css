@@ -153,15 +153,13 @@ main-footer > div {
   padding: 25px 0;
 }
 main-footer .pages > div {
-  padding: 0 0 10px;
-}
-main-footer .social-links li {
-  /* width: min-content; */
+  padding: 0 0 12px;
 }
 main-footer .social-links li svg {
-  height: 45px;
+  height: min-content;
   width: 65px;
-  padding: 0 10px;
+  padding: 3px;
+  margin: 0 7px;
 }
 main-footer .company > * {
   padding: 0 0 5px;
@@ -248,5 +246,32 @@ main-footer .company > *:last-child {
   .list-categories .categories__item:nth-child(even) .iwt .text > div {
     margin: 20px 0 20px 20px;
     border-width: 2px 0 2px 2px;
+  }
+  /* Footer */
+  main-footer .footer-wrapper .info-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main-footer .footer-wrapper .info-wrapper .pages {
+    flex-basis: 40%;
+  }
+  main-footer .footer-wrapper .info-wrapper .company {
+    flex-basis: 45%;
+  }
+  main-footer .pages {
+    flex-direction: row;
+  }
+  main-footer .pages > div {
+    padding: 0 0 25px;
+  }
+  main-footer .social-links li svg {
+    width: 75px;
+    margin: 0 14px;
+  }
+  main-footer .copy-rights {
+    flex-direction: row;
+  }
+  main-footer .copy-rights > .small-hide {
+    padding: 0 6px;
   }
 }

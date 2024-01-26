@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, user-scalable=0.8, maximum-scale=1.0"
+    />
     <title>3Frames RewindMoments</title>
     <link rel="stylesheet" href="./dist/base.css" />
     <link rel="stylesheet" href="./dist/splide.min.css" />
@@ -10,6 +13,10 @@
     <link rel="stylesheet" href="./assests/style.css" />
     <script src="./assests/global.js" defer></script>
     <style>
+      /* body {
+        transform: scale(0.8);
+        transform-origin: 0 0;
+      } */
       @font-face {
         font-family: "Merienda";
         src: url(./dist/Merienda-VariableFont_wght.ttf);
@@ -317,7 +324,7 @@
 
       <main-footer>
         <div class="footer-wrapper page-width">
-          <div class="flex flex-column">
+          <div class="info-wrapper flex flex-column">
             <div class="pages">
               <div class="handles">
                 <ul class="flex justify-around">
@@ -596,15 +603,15 @@
               </p>
             </div>
           </div>
-          <div class="copy-rights flex flex-column">
-            <small class="center no-break">
+          <div class="copy-rights flex flex-column justify-center items-center">
+            <small class="no-break">
               © 2023-<span class="current-date" style="font-size: inherit"
                 >24</span
               >
               3Frames RewindMoments
             </small>
             <small class="small-hide">|</small>
-            <small class="center">Alrights reserved</small>
+            <small class="">Alrights reserved</small>
           </div>
         </div>
       </main-footer>
