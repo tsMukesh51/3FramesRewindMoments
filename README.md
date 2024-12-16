@@ -30,6 +30,7 @@ Desktop View
 ![3FramesRewindMoments-Desktop-2](https://github.com/user-attachments/assets/13162883-9ddd-44bf-a14c-4098e6ed7ea4)
 
 Mobile View
+
 ![3FramesRewindMoments-Mobile-1](https://github.com/user-attachments/assets/012f1910-92ca-4a71-ad61-c34277bf0d43)
 ![3FramesRewindMoment-Mobile-2](https://github.com/user-attachments/assets/c5c0ef0b-9005-48a8-8e4e-296346671880)
 
