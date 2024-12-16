@@ -1,620 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
-      charset="UTF-8"
-      name="viewport"
-      content="width=device-width, initial-scale=0.8, user-scalable=0.8, maximum-scale=1.0"
-    />
-    <title>3Frames RewindMoments</title>
-    <link rel="stylesheet" href="./dist/base.css" />
-    <link rel="stylesheet" href="./dist/splide.min.css" />
-    <script src="./dist/splide.min.js" defer></script>
-    <link rel="stylesheet" href="./assests/style.css" />
-    <script src="./assests/global.js" defer></script>
-    <style>
-      /* body {
+
+<head>
+  <meta charset="UTF-8" name="viewport"
+    content="width=device-width, initial-scale=0.8, user-scalable=0.8, maximum-scale=1.0" />
+  <title>3Frames RewindMoments</title>
+  <link rel="stylesheet" href="./dist/base.css" />
+  <link rel="stylesheet" href="./dist/splide.min.css" />
+  <script src="./dist/splide.min.js" defer></script>
+  <link rel="stylesheet" href="./assests/style.css" />
+  <script src="./assests/global.js" defer></script>
+  <style>
+    /* body {
         transform: scale(0.8);
         transform-origin: 0 0;
       } */
-      @font-face {
-        font-family: "Merienda";
-        src: url(./dist/Merienda-VariableFont_wght.ttf);
-      }
-      :root {
-        --primary-color: #fdae0b;
-        --secondary-color: #cb045a;
-        --tertiary-color: #18bf0d;
-        --primary-dark-color: #805500;
-        --secondary-dark-color: #61002a;
-        --tertiary-dark-color: #087900;
-        --primary-light-color: #ffc653;
-        --secondary-light-color: #ff358d;
-        --tertiary-light-color: #4ad340;
-        --color-heading-text: #000;
-        --font-heading-family: Lora, serif;
-        --font-heading-weight: 600;
-        --font-heading-scale: 1;
-        --color-para-text: #000;
-        --font-para-family: Inter, sans-serif;
-        --font-para-weight: 400;
-        --font-para-scale: 1;
-        --page-width: 1440px;
-        --color-button-text: #fff;
-        --color-button-background: #000;
-        --color-button-hover: #000000b0;
-        --animation-time: 250ms ease-out;
-        --header-height: 120px;
-        --section-spacing: 60px;
-      }
-    </style>
-  </head>
-  <body>
-    <main-header id="main-header">
-      <div class="flex justify-between page-width">
-        <a href="/" class="root-url figure flex items-center">
-          <img src="./assests/logo.jpg" alt="logo" />
-          <h6 class="title">3Frames RewindMoments</h6>
-        </a>
-        <div
-          class="hamburger-menu flex flex-column items-end medium-hide large-hide"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav class="menu">
-          <ul class="flex flex-column">
-            <li class="menu-items"><a href="#">Home</a></li>
-            <li class="menu-items"><a href="#">About Us</a></li>
-            <li class="menu-items"><a href="#">Testimonials</a></li>
-            <li class="menu-items"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+    @font-face {
+      font-family: "Merienda";
+      src: url(./dist/Merienda-VariableFont_wght.ttf);
+    }
+
+    :root {
+      --primary-color: #fdae0b;
+      --secondary-color: #cb045a;
+      --tertiary-color: #18bf0d;
+      --primary-dark-color: #805500;
+      --secondary-dark-color: #61002a;
+      --tertiary-dark-color: #087900;
+      --primary-light-color: #ffc653;
+      --secondary-light-color: #ff358d;
+      --tertiary-light-color: #4ad340;
+      --color-heading-text: #000;
+      --font-heading-family: Lora, serif;
+      --font-heading-weight: 600;
+      --font-heading-scale: 1;
+      --color-para-text: #000;
+      --font-para-family: Inter, sans-serif;
+      --font-para-weight: 400;
+      --font-para-scale: 1;
+      --page-width: 1440px;
+      --color-button-text: #fff;
+      --color-button-background: #000;
+      --color-button-hover: #000000b0;
+      --animation-time: 250ms ease-out;
+      --header-height: 120px;
+      --section-spacing: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <main-header id="main-header">
+    <div class="flex justify-between page-width">
+      <a href="/" class="root-url figure flex items-center">
+        <img src="./assests/logo.jpg" alt="logo" />
+        <h6 class="title">3Frames RewindMoments</h6>
+      </a>
+      <div class="hamburger-menu flex flex-column items-end medium-hide large-hide">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </main-header>
-    <main>
-      <section class="banner-slide-show">
-        <div class="page-width">
-          <slider-component class="splide" role="group">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <picture class="media media--portrait_3-4">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
+      <nav class="menu">
+        <ul class="flex flex-column">
+          <li class="menu-items"><a href="#">Home</a></li>
+          <li class="menu-items"><a href="#">About Us</a></li>
+          <li class="menu-items"><a href="#">Testimonials</a></li>
+          <li class="menu-items"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </main-header>
+  <main>
+    <section class="banner-slide-show">
+      <div class="page-width">
+        <slider-component class="splide" role="group">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <picture class="media media--portrait_3-4">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture class="media media--portrait_3-4">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture class="media media--portrait_3-4">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </slider-component>
+      </div>
+    </section>
+    <section class="list-categories">
+      <div class="page-width">
+        <ul>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <h3 class="center">Prewedding</h3>
+            <div class="iwt flex flex-column">
+              <div class="image">
+                <picture class="media media--landscape_3-2">
+                  <source media="(max-width: 767px)" srcset="https://i.ibb.co/6DvxZvD/3FRA0207.webp" />
+                  <source media="(min-width: 768px)" srcset="https://i.ibb.co/tBKLw2D/313A8992.webp" />
+                  <img src="https://i.ibb.co/6DvxZvD/3FRA0207.webp" alt="Baby Sitting" loading="lazy" />
+                </picture>
+              </div>
+              <div class="text">
+                <div class="flex items-center">
+                  <h6 class="center">
+                    capturing your lasting memories of your journey towards
+                    marriage
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main-footer>
+      <div class="footer-wrapper page-width">
+        <div class="info-wrapper flex flex-column">
+          <div class="pages">
+            <div class="handles">
+              <ul class="flex justify-around">
+                <li>
+                  <a href="#">Home</a>
                 </li>
-                <li class="splide__slide">
-                  <picture class="media media--portrait_3-4">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
+                <li>
+                  <a href="#">About Us</a>
                 </li>
-                <li class="splide__slide">
-                  <picture class="media media--portrait_3-4">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
+                <li>
+                  <a href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
-          </slider-component>
+            <div class="social-links">
+              <ul class="flex justify-center">
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                      viewBox="0,0,256,256">
+                      <defs>
+                        <radialGradient cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"
+                          id="color-1_Xy10Jcu1L2Su_gr1">
+                          <stop offset="0" stop-color="#ffdd55"></stop>
+                          <stop offset="0.328" stop-color="#ff543f"></stop>
+                          <stop offset="0.348" stop-color="#fc5245"></stop>
+                          <stop offset="0.504" stop-color="#e64771"></stop>
+                          <stop offset="0.643" stop-color="#d53e91"></stop>
+                          <stop offset="0.761" stop-color="#cc39a4"></stop>
+                          <stop offset="0.841" stop-color="#c837ab"></stop>
+                        </radialGradient>
+                        <radialGradient cx="11.786" cy="5.5403" r="29.813" gradientUnits="userSpaceOnUse"
+                          id="color-2_Xy10Jcu1L2Su_gr2">
+                          <stop offset="0" stop-color="#4168c9"></stop>
+                          <stop offset="0.999" stop-color="#4168c9" stop-opacity="0"></stop>
+                        </radialGradient>
+                      </defs>
+                      <g transform="translate(-30.72,-30.72) scale(1.24,1.24)">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.33333,5.33333)">
+                            <path
+                              d="M34.017,41.99l-20,0.019c-4.4,0.004 -8.003,-3.592 -8.008,-7.992l-0.019,-20c-0.004,-4.4 3.592,-8.003 7.992,-8.008l20,-0.019c4.4,-0.004 8.003,3.592 8.008,7.992l0.019,20c0.005,4.401 -3.592,8.004 -7.992,8.008z"
+                              fill="url(#color-1_Xy10Jcu1L2Su_gr1)"></path>
+                            <path
+                              d="M34.017,41.99l-20,0.019c-4.4,0.004 -8.003,-3.592 -8.008,-7.992l-0.019,-20c-0.004,-4.4 3.592,-8.003 7.992,-8.008l20,-0.019c4.4,-0.004 8.003,3.592 8.008,7.992l0.019,20c0.005,4.401 -3.592,8.004 -7.992,8.008z"
+                              fill="url(#color-2_Xy10Jcu1L2Su_gr2)"></path>
+                            <path
+                              d="M24,31c-3.859,0 -7,-3.14 -7,-7c0,-3.86 3.141,-7 7,-7c3.859,0 7,3.14 7,7c0,3.86 -3.141,7 -7,7zM24,19c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5z"
+                              fill="#ffffff"></path>
+                            <circle cx="31.5" cy="16.5" r="1.5" fill="#ffffff"></circle>
+                            <path
+                              d="M30,37h-12c-3.859,0 -7,-3.14 -7,-7v-12c0,-3.86 3.141,-7 7,-7h12c3.859,0 7,3.14 7,7v12c0,3.86 -3.141,7 -7,7zM18,13c-2.757,0 -5,2.243 -5,5v12c0,2.757 2.243,5 5,5h12c2.757,0 5,-2.243 5,-5v-12c0,-2.757 -2.243,-5 -5,-5z"
+                              fill="#ffffff"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                      viewBox="0,0,256,256">
+                      <defs>
+                        <linearGradient x1="9.993" y1="9.993" x2="40.615" y2="40.615" gradientUnits="userSpaceOnUse"
+                          id="color-1_uLWV5A9vXIPu_gr1">
+                          <stop offset="0" stop-color="#2aa4f4"></stop>
+                          <stop offset="1" stop-color="#007ad9"></stop>
+                        </linearGradient>
+                      </defs>
+                      <g transform="translate(-15.36,-15.36) scale(1.12,1.12)">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.33333,5.33333)">
+                            <path
+                              d="M24,4c-11.046,0 -20,8.954 -20,20c0,11.046 8.954,20 20,20c11.046,0 20,-8.954 20,-20c0,-11.046 -8.954,-20 -20,-20z"
+                              fill="url(#color-1_uLWV5A9vXIPu_gr1)"></path>
+                            <path
+                              d="M26.707,29.301h5.176l0.813,-5.258h-5.989v-2.874c0,-2.184 0.714,-4.121 2.757,-4.121h3.283v-4.588c-0.577,-0.078 -1.797,-0.248 -4.102,-0.248c-4.814,0 -7.636,2.542 -7.636,8.334v3.498h-4.949v5.258h4.948v14.452c0.98,0.146 1.973,0.246 2.992,0.246c0.921,0 1.82,-0.084 2.707,-0.204z"
+                              fill="#ffffff"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                      viewBox="0,0,256,256">
+                      <defs>
+                        <linearGradient x1="9.816" y1="9.871" x2="41.246" y2="41.301" gradientUnits="userSpaceOnUse"
+                          id="color-1_9a46bTk3awwI_gr1">
+                          <stop offset="0" stop-color="#f44f5a"></stop>
+                          <stop offset="0.443" stop-color="#ee3d4a"></stop>
+                          <stop offset="1" stop-color="#e52030"></stop>
+                        </linearGradient>
+                      </defs>
+                      <g transform="translate(-2.56,-2.56) scale(1.02,1.02)">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.33333,5.33333)">
+                            <path
+                              d="M45.012,34.56c-0.439,2.24 -2.304,3.947 -4.608,4.267c-3.621,0.533 -9.656,1.173 -16.459,1.173c-6.693,0 -12.728,-0.64 -16.459,-1.173c-2.304,-0.32 -4.17,-2.027 -4.608,-4.267c-0.439,-2.453 -0.878,-6.08 -0.878,-10.56c0,-4.48 0.439,-8.107 0.878,-10.56c0.439,-2.24 2.304,-3.947 4.608,-4.267c3.621,-0.533 9.656,-1.173 16.459,-1.173c6.803,0 12.728,0.64 16.459,1.173c2.304,0.32 4.17,2.027 4.608,4.267c0.439,2.453 0.988,6.08 0.988,10.56c-0.11,4.48 -0.549,8.107 -0.988,10.56z"
+                              fill="url(#color-1_9a46bTk3awwI_gr1)"></path>
+                            <path
+                              d="M32.352,22.44l-11.436,-7.624c-0.577,-0.385 -1.314,-0.421 -1.925,-0.093c-0.611,0.327 -0.991,0.96 -0.991,1.653v15.248c0,0.693 0.38,1.327 0.991,1.654c0.278,0.149 0.581,0.222 0.884,0.222c0.364,0 0.726,-0.106 1.04,-0.315l11.436,-7.624c0.523,-0.349 0.835,-0.932 0.835,-1.56c0.001,-0.629 -0.312,-1.212 -0.834,-1.561z"
+                              fill="#000000" opacity="0.05"></path>
+                            <path
+                              d="M20.681,15.237l10.79,7.194c0.689,0.495 1.153,0.938 1.153,1.513c0,0.575 -0.224,0.976 -0.715,1.334c-0.371,0.27 -11.045,7.364 -11.045,7.364c-0.901,0.604 -2.364,0.476 -2.364,-1.499v-14.399c0,-2.005 1.584,-1.905 2.181,-1.507z"
+                              fill="#000000" opacity="0.07"></path>
+                            <path
+                              d="M19,31.568v-15.135c0,-0.743 0.828,-1.187 1.447,-0.774l11.352,7.568c0.553,0.368 0.553,1.18 0,1.549l-11.352,7.568c-0.619,0.411 -1.447,-0.032 -1.447,-0.776z"
+                              fill="#ffffff"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                      viewBox="0,0,256,256">
+                      <g transform="translate(-29.44,-29.44) scale(1.23,1.23)">
+                        <g fill="#03a9f4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.33333,5.33333)">
+                            <path
+                              d="M42,12.429c-1.323,0.586 -2.746,0.977 -4.247,1.162c1.526,-0.906 2.7,-2.351 3.251,-4.058c-1.428,0.837 -3.01,1.452 -4.693,1.776c-1.344,-1.425 -3.261,-2.309 -5.385,-2.309c-4.08,0 -7.387,3.278 -7.387,7.32c0,0.572 0.067,1.129 0.193,1.67c-6.138,-0.308 -11.582,-3.226 -15.224,-7.654c-0.64,1.082 -1,2.349 -1,3.686c0,2.541 1.301,4.778 3.285,6.096c-1.211,-0.037 -2.351,-0.374 -3.349,-0.914c0,0.022 0,0.055 0,0.086c0,3.551 2.547,6.508 5.923,7.181c-0.617,0.169 -1.269,0.263 -1.941,0.263c-0.477,0 -0.942,-0.054 -1.392,-0.135c0.94,2.902 3.667,5.023 6.898,5.086c-2.528,1.96 -5.712,3.134 -9.174,3.134c-0.598,0 -1.183,-0.034 -1.761,-0.104c3.271,2.071 7.155,3.285 11.324,3.285c13.585,0 21.017,-11.156 21.017,-20.834c0,-0.317 -0.01,-0.633 -0.025,-0.945c1.45,-1.024 2.7,-2.316 3.687,-3.792">
+                            </path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="company">
+            <h4>3Frames RewindMoments</h4>
+            <p>
+              No.999, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida,
+              Uttar Pradesh - 201305
+            </p>
+          </div>
         </div>
-      </section>
-      <section class="list-categories">
-        <div class="page-width">
-          <ul>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="categories__item">
-              <h3 class="center">Prewedding</h3>
-              <div class="iwt flex flex-column">
-                <div class="image">
-                  <picture class="media media--landscape_3-2">
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./media/0F1A2355.jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./media/0F1A6048.jpg"
-                    />
-                    <img
-                      src="./media/0F1A2355.jpg"
-                      alt="Baby Sitting"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="text">
-                  <div class="flex items-center">
-                    <h6 class="center">
-                      capturing your lasting memories of your journey towards
-                      marriage
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="copy-rights flex flex-column justify-center items-center">
+          <small class="no-break">
+            © 2023-<span class="current-date" style="font-size: inherit">24</span>
+            3Frames RewindMoments
+          </small>
+          <small class="small-hide">|</small>
+          <small class="">Alrights reserved</small>
         </div>
-      </section>
+      </div>
+    </main-footer>
+  </main>
+</body>
 
-      <main-footer>
-        <div class="footer-wrapper page-width">
-          <div class="info-wrapper flex flex-column">
-            <div class="pages">
-              <div class="handles">
-                <ul class="flex justify-around">
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-links">
-                <ul class="flex justify-center">
-                  <li>
-                    <a href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="100"
-                        height="100"
-                        viewBox="0,0,256,256"
-                      >
-                        <defs>
-                          <radialGradient
-                            cx="19.38"
-                            cy="42.035"
-                            r="44.899"
-                            gradientUnits="userSpaceOnUse"
-                            id="color-1_Xy10Jcu1L2Su_gr1"
-                          >
-                            <stop offset="0" stop-color="#ffdd55"></stop>
-                            <stop offset="0.328" stop-color="#ff543f"></stop>
-                            <stop offset="0.348" stop-color="#fc5245"></stop>
-                            <stop offset="0.504" stop-color="#e64771"></stop>
-                            <stop offset="0.643" stop-color="#d53e91"></stop>
-                            <stop offset="0.761" stop-color="#cc39a4"></stop>
-                            <stop offset="0.841" stop-color="#c837ab"></stop>
-                          </radialGradient>
-                          <radialGradient
-                            cx="11.786"
-                            cy="5.5403"
-                            r="29.813"
-                            gradientUnits="userSpaceOnUse"
-                            id="color-2_Xy10Jcu1L2Su_gr2"
-                          >
-                            <stop offset="0" stop-color="#4168c9"></stop>
-                            <stop
-                              offset="0.999"
-                              stop-color="#4168c9"
-                              stop-opacity="0"
-                            ></stop>
-                          </radialGradient>
-                        </defs>
-                        <g
-                          transform="translate(-30.72,-30.72) scale(1.24,1.24)"
-                        >
-                          <g
-                            fill="none"
-                            fill-rule="nonzero"
-                            stroke="none"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            stroke-linejoin="miter"
-                            stroke-miterlimit="10"
-                            stroke-dasharray=""
-                            stroke-dashoffset="0"
-                            font-family="none"
-                            font-weight="none"
-                            font-size="none"
-                            text-anchor="none"
-                            style="mix-blend-mode: normal"
-                          >
-                            <g transform="scale(5.33333,5.33333)">
-                              <path
-                                d="M34.017,41.99l-20,0.019c-4.4,0.004 -8.003,-3.592 -8.008,-7.992l-0.019,-20c-0.004,-4.4 3.592,-8.003 7.992,-8.008l20,-0.019c4.4,-0.004 8.003,3.592 8.008,7.992l0.019,20c0.005,4.401 -3.592,8.004 -7.992,8.008z"
-                                fill="url(#color-1_Xy10Jcu1L2Su_gr1)"
-                              ></path>
-                              <path
-                                d="M34.017,41.99l-20,0.019c-4.4,0.004 -8.003,-3.592 -8.008,-7.992l-0.019,-20c-0.004,-4.4 3.592,-8.003 7.992,-8.008l20,-0.019c4.4,-0.004 8.003,3.592 8.008,7.992l0.019,20c0.005,4.401 -3.592,8.004 -7.992,8.008z"
-                                fill="url(#color-2_Xy10Jcu1L2Su_gr2)"
-                              ></path>
-                              <path
-                                d="M24,31c-3.859,0 -7,-3.14 -7,-7c0,-3.86 3.141,-7 7,-7c3.859,0 7,3.14 7,7c0,3.86 -3.141,7 -7,7zM24,19c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5z"
-                                fill="#ffffff"
-                              ></path>
-                              <circle
-                                cx="31.5"
-                                cy="16.5"
-                                r="1.5"
-                                fill="#ffffff"
-                              ></circle>
-                              <path
-                                d="M30,37h-12c-3.859,0 -7,-3.14 -7,-7v-12c0,-3.86 3.141,-7 7,-7h12c3.859,0 7,3.14 7,7v12c0,3.86 -3.141,7 -7,7zM18,13c-2.757,0 -5,2.243 -5,5v12c0,2.757 2.243,5 5,5h12c2.757,0 5,-2.243 5,-5v-12c0,-2.757 -2.243,-5 -5,-5z"
-                                fill="#ffffff"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="100"
-                        height="100"
-                        viewBox="0,0,256,256"
-                      >
-                        <defs>
-                          <linearGradient
-                            x1="9.993"
-                            y1="9.993"
-                            x2="40.615"
-                            y2="40.615"
-                            gradientUnits="userSpaceOnUse"
-                            id="color-1_uLWV5A9vXIPu_gr1"
-                          >
-                            <stop offset="0" stop-color="#2aa4f4"></stop>
-                            <stop offset="1" stop-color="#007ad9"></stop>
-                          </linearGradient>
-                        </defs>
-                        <g
-                          transform="translate(-15.36,-15.36) scale(1.12,1.12)"
-                        >
-                          <g
-                            fill="none"
-                            fill-rule="nonzero"
-                            stroke="none"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            stroke-linejoin="miter"
-                            stroke-miterlimit="10"
-                            stroke-dasharray=""
-                            stroke-dashoffset="0"
-                            font-family="none"
-                            font-weight="none"
-                            font-size="none"
-                            text-anchor="none"
-                            style="mix-blend-mode: normal"
-                          >
-                            <g transform="scale(5.33333,5.33333)">
-                              <path
-                                d="M24,4c-11.046,0 -20,8.954 -20,20c0,11.046 8.954,20 20,20c11.046,0 20,-8.954 20,-20c0,-11.046 -8.954,-20 -20,-20z"
-                                fill="url(#color-1_uLWV5A9vXIPu_gr1)"
-                              ></path>
-                              <path
-                                d="M26.707,29.301h5.176l0.813,-5.258h-5.989v-2.874c0,-2.184 0.714,-4.121 2.757,-4.121h3.283v-4.588c-0.577,-0.078 -1.797,-0.248 -4.102,-0.248c-4.814,0 -7.636,2.542 -7.636,8.334v3.498h-4.949v5.258h4.948v14.452c0.98,0.146 1.973,0.246 2.992,0.246c0.921,0 1.82,-0.084 2.707,-0.204z"
-                                fill="#ffffff"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="100"
-                        height="100"
-                        viewBox="0,0,256,256"
-                      >
-                        <defs>
-                          <linearGradient
-                            x1="9.816"
-                            y1="9.871"
-                            x2="41.246"
-                            y2="41.301"
-                            gradientUnits="userSpaceOnUse"
-                            id="color-1_9a46bTk3awwI_gr1"
-                          >
-                            <stop offset="0" stop-color="#f44f5a"></stop>
-                            <stop offset="0.443" stop-color="#ee3d4a"></stop>
-                            <stop offset="1" stop-color="#e52030"></stop>
-                          </linearGradient>
-                        </defs>
-                        <g transform="translate(-2.56,-2.56) scale(1.02,1.02)">
-                          <g
-                            fill="none"
-                            fill-rule="nonzero"
-                            stroke="none"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            stroke-linejoin="miter"
-                            stroke-miterlimit="10"
-                            stroke-dasharray=""
-                            stroke-dashoffset="0"
-                            font-family="none"
-                            font-weight="none"
-                            font-size="none"
-                            text-anchor="none"
-                            style="mix-blend-mode: normal"
-                          >
-                            <g transform="scale(5.33333,5.33333)">
-                              <path
-                                d="M45.012,34.56c-0.439,2.24 -2.304,3.947 -4.608,4.267c-3.621,0.533 -9.656,1.173 -16.459,1.173c-6.693,0 -12.728,-0.64 -16.459,-1.173c-2.304,-0.32 -4.17,-2.027 -4.608,-4.267c-0.439,-2.453 -0.878,-6.08 -0.878,-10.56c0,-4.48 0.439,-8.107 0.878,-10.56c0.439,-2.24 2.304,-3.947 4.608,-4.267c3.621,-0.533 9.656,-1.173 16.459,-1.173c6.803,0 12.728,0.64 16.459,1.173c2.304,0.32 4.17,2.027 4.608,4.267c0.439,2.453 0.988,6.08 0.988,10.56c-0.11,4.48 -0.549,8.107 -0.988,10.56z"
-                                fill="url(#color-1_9a46bTk3awwI_gr1)"
-                              ></path>
-                              <path
-                                d="M32.352,22.44l-11.436,-7.624c-0.577,-0.385 -1.314,-0.421 -1.925,-0.093c-0.611,0.327 -0.991,0.96 -0.991,1.653v15.248c0,0.693 0.38,1.327 0.991,1.654c0.278,0.149 0.581,0.222 0.884,0.222c0.364,0 0.726,-0.106 1.04,-0.315l11.436,-7.624c0.523,-0.349 0.835,-0.932 0.835,-1.56c0.001,-0.629 -0.312,-1.212 -0.834,-1.561z"
-                                fill="#000000"
-                                opacity="0.05"
-                              ></path>
-                              <path
-                                d="M20.681,15.237l10.79,7.194c0.689,0.495 1.153,0.938 1.153,1.513c0,0.575 -0.224,0.976 -0.715,1.334c-0.371,0.27 -11.045,7.364 -11.045,7.364c-0.901,0.604 -2.364,0.476 -2.364,-1.499v-14.399c0,-2.005 1.584,-1.905 2.181,-1.507z"
-                                fill="#000000"
-                                opacity="0.07"
-                              ></path>
-                              <path
-                                d="M19,31.568v-15.135c0,-0.743 0.828,-1.187 1.447,-0.774l11.352,7.568c0.553,0.368 0.553,1.18 0,1.549l-11.352,7.568c-0.619,0.411 -1.447,-0.032 -1.447,-0.776z"
-                                fill="#ffffff"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="100"
-                        height="100"
-                        viewBox="0,0,256,256"
-                      >
-                        <g
-                          transform="translate(-29.44,-29.44) scale(1.23,1.23)"
-                        >
-                          <g
-                            fill="#03a9f4"
-                            fill-rule="nonzero"
-                            stroke="none"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            stroke-linejoin="miter"
-                            stroke-miterlimit="10"
-                            stroke-dasharray=""
-                            stroke-dashoffset="0"
-                            font-family="none"
-                            font-weight="none"
-                            font-size="none"
-                            text-anchor="none"
-                            style="mix-blend-mode: normal"
-                          >
-                            <g transform="scale(5.33333,5.33333)">
-                              <path
-                                d="M42,12.429c-1.323,0.586 -2.746,0.977 -4.247,1.162c1.526,-0.906 2.7,-2.351 3.251,-4.058c-1.428,0.837 -3.01,1.452 -4.693,1.776c-1.344,-1.425 -3.261,-2.309 -5.385,-2.309c-4.08,0 -7.387,3.278 -7.387,7.32c0,0.572 0.067,1.129 0.193,1.67c-6.138,-0.308 -11.582,-3.226 -15.224,-7.654c-0.64,1.082 -1,2.349 -1,3.686c0,2.541 1.301,4.778 3.285,6.096c-1.211,-0.037 -2.351,-0.374 -3.349,-0.914c0,0.022 0,0.055 0,0.086c0,3.551 2.547,6.508 5.923,7.181c-0.617,0.169 -1.269,0.263 -1.941,0.263c-0.477,0 -0.942,-0.054 -1.392,-0.135c0.94,2.902 3.667,5.023 6.898,5.086c-2.528,1.96 -5.712,3.134 -9.174,3.134c-0.598,0 -1.183,-0.034 -1.761,-0.104c3.271,2.071 7.155,3.285 11.324,3.285c13.585,0 21.017,-11.156 21.017,-20.834c0,-0.317 -0.01,-0.633 -0.025,-0.945c1.45,-1.024 2.7,-2.316 3.687,-3.792"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="company">
-              <h4>3Frames RewindMoments</h4>
-              <p>
-                No.999, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida,
-                Uttar Pradesh - 201305
-              </p>
-            </div>
-          </div>
-          <div class="copy-rights flex flex-column justify-center items-center">
-            <small class="no-break">
-              © 2023-<span class="current-date" style="font-size: inherit"
-                >24</span
-              >
-              3Frames RewindMoments
-            </small>
-            <small class="small-hide">|</small>
-            <small class="">Alrights reserved</small>
-          </div>
-        </div>
-      </main-footer>
-    </main>
-  </body>
 </html>
